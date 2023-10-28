@@ -7,8 +7,29 @@ body{
 }
 
 .button{
-    &__icon{
+    display: flex;
+    align-items: center;
+    padding: 6px 10px 6px 30px;
+    width: 160px;
+    margin: 0 auto;
+    &--bg{
+        background-color: color.$white;
+        .button__text{
+            color: color.$bg-dark;
+        }
+    }
 
+    &--border{
+        border: 1px solid color.$white;
+        .button__text{
+            color: color.$white;
+        }
+    }
+
+    &__icon{
+        width: 24px;
+        display: flex;
+        align-items: center;
     }
 
     &__icon-path{
@@ -20,6 +41,25 @@ body{
     }
 
     &__text{
+        margin-left: 10px;
+        font-size: 16px;
+        letter-spacing: 0.08em;
+        color: color.$white;
+    }
+}
 
+// header
+.header{
+    background-color: color.$bg-dark;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+    &__nav-item{
+        &+&{
+            margin-top: 24px;
+        }
     }
 }
