@@ -130,3 +130,176 @@ body{
         font-size: 14px;
     }
 }
+
+.section{
+    padding: 48px 0;
+
+    &__inner{
+        padding: 0 32px;
+    }
+
+    &__head{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+        
+        &-main{
+            font-size: 40px;
+            letter-spacing: 0.1em;
+        }
+    
+        &-sub{
+            font-size: 11px;
+        }
+    }
+
+    &__lead-text{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    &__contents{
+        margin-top: 40px;
+    }
+}
+
+// service
+.service{
+    &__list{
+        list-style: none;
+        list-style-type: none;
+    }
+    &__item{
+        &+&{
+            margin-top: 40px;
+        }
+
+        &-img{
+            text-align: center;
+            margin-bottom: 14px;
+        }
+        &-name{
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        &-text{
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    }
+
+}
+
+// works
+.works{
+    background-color: color.$bg-light;
+    &__list{
+
+    }
+    &__item{
+
+        &-img{
+            margin-bottom: 16px;
+            img{
+                box-shadow: 0 4px 15px rgba(color.$black, 0.15);
+            }
+        }
+
+        &-name{
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        &-link{
+            font-size: 14px;
+            text-decoration: underline;
+        }
+
+        &+&{
+            margin-top: 40px;
+        }
+    }
+}
+
+// About
+.about{
+    &__container{
+        // display: flex;
+        // flex-direction: row-reverse;
+    }
+
+    &__img{
+        margin-bottom: 32px;
+        img{
+            box-shadow: 0 4px 15px rgba(color.$black, 0.15);
+        }
+    }
+
+    &__text-contents{
+
+    }
+
+    &__text{
+        font-size: 16px;
+        line-height: 1.6;
+        
+        &+&{
+            margin-top: 1em;
+        }
+    }
+}
+
+// WorkFlow
+.workflow{
+
+    &__list{
+        margin-top: 64px;
+    }
+    
+    &__item{
+        position: relative;
+        border:1px solid color.$bg-gray-l;
+        padding: 46px 16px 24px;
+
+        &+&{
+            margin-top: 46px;
+        }
+    }
+    
+    &__item-no{
+        position: absolute;
+        top: -24px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        background-color: color.$bg-dark;
+        color: color.$white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    &__item-img{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__item-name{
+        font-size: 16px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    &__item-text{
+        font-size: 14px;
+
+    }
+}
