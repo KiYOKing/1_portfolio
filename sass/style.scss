@@ -254,7 +254,7 @@ body{
 
 // WorkFlow
 .workflow{
-
+    background-color: color.$bg-light;
     &__list{
         margin-top: 64px;
     }
@@ -301,5 +301,61 @@ body{
     &__item-text{
         font-size: 14px;
 
+    }
+}
+
+//Message
+.message{
+    
+    &__container{
+        // margin-top: 50px;
+        padding: 48px 0 48px;
+    }
+
+    &__img{
+
+        img{
+            width: 570px;
+        }
+    }
+
+    &__text-contents{
+        margin-top: 46px;
+
+    }
+
+    &__text{
+
+    }
+
+}
+
+// Contact
+.contact{
+    background-color: color.$bg-gray-l;
+    padding: 40px;
+    &__text-contacts{
+        text-align: center;
+        color: color.$white;
+    }
+    &__link{
+        display: flex;
+        width: 160px;
+        margin: 0 auto;
+        padding: 6px 10px 6px 30px;
+        border: 1px solid color.$white;
+    }
+    &__link-img{
+        width: 24px;
+    }
+
+    &__link-img-path{
+        fill:color.$white;
+    }
+
+    &__link-text{
+        margin: 0 0 0 10px;
+        font-size: 16px;
+        letter-spacing: 0.08em;
     }
 }
