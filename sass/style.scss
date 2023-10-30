@@ -151,6 +151,11 @@ body{
         &-sub{
             font-size: 11px;
         }
+
+        &-center{
+            text-align: center;
+            color: color.$white;
+        }
     }
 
     &__lead-text{
@@ -335,8 +340,7 @@ body{
     background-color: color.$bg-gray-l;
     padding: 40px;
     &__text-contacts{
-        text-align: center;
-        color: color.$white;
+
     }
     &__link{
         display: flex;
@@ -357,5 +361,37 @@ body{
         margin: 0 0 0 10px;
         font-size: 16px;
         letter-spacing: 0.08em;
+        color:color.$white;
+    }
+}
+
+// Twitter
+.twitter{
+    background-color: color.$bg-dark;
+    padding: 40px;
+    &__text-contents{
+
+    }
+
+    &__link{
+        display: flex;
+        width: 160px;
+        margin: 0 auto;
+        padding: 6px 10px 6px 30px;
+        border: 1px solid color.$white;
+    }
+
+    &__link-img{
+        width: 24px;
+    }
+
+    &__link-img-path{
+        fill:color.$white;
+    }
+    &__link-text{
+        margin: 0 0 0 10px;
+        font-size: 16px;
+        letter-spacing: 0.08em;
+        color:color.$white;
     }
 }

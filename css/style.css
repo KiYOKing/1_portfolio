@@ -141,6 +141,10 @@ body.is-fixed {
 .section__head-sub {
   font-size: 11px;
 }
+.section__head-center {
+  text-align: center;
+  color: #fff;
+}
 .section__lead-text {
   font-size: 16px;
   line-height: 1.6;
@@ -272,10 +276,6 @@ body.is-fixed {
   background-color: #6f6f6f;
   padding: 40px;
 }
-.contact__text-contacts {
-  text-align: center;
-  color: #fff;
-}
 .contact__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,4 +295,31 @@ body.is-fixed {
   margin: 0 0 0 10px;
   font-size: 16px;
   letter-spacing: 0.08em;
+  color: #fff;
+}
+
+.twitter {
+  background-color: #4a4a4a;
+  padding: 40px;
+}
+.twitter__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 160px;
+  margin: 0 auto;
+  padding: 6px 10px 6px 30px;
+  border: 1px solid #fff;
+}
+.twitter__link-img {
+  width: 24px;
+}
+.twitter__link-img-path {
+  fill: #fff;
+}
+.twitter__link-text {
+  margin: 0 0 0 10px;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  color: #fff;
 }
