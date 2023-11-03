@@ -7,12 +7,8 @@ body.is-fixed {
 }
 
 .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 6px 10px 6px 30px;
   width: 160px;
   margin: 0 auto;
@@ -31,12 +27,8 @@ body.is-fixed {
 }
 .button__icon {
   width: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .button__icon-path {
   fill: #fff;
@@ -125,13 +117,8 @@ body.is-fixed {
   padding: 0 32px;
 }
 .section__head {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-bottom: 32px;
 }
 .section__head-main {
@@ -182,8 +169,7 @@ body.is-fixed {
   margin-bottom: 16px;
 }
 .works__item-img img {
-  -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 .works__item-name {
   font-size: 16px;
@@ -202,8 +188,7 @@ body.is-fixed {
   margin-bottom: 32px;
 }
 .about__img img {
-  -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 .about__text {
   font-size: 16px;
@@ -231,23 +216,16 @@ body.is-fixed {
   position: absolute;
   top: -24px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   font-size: 24px;
   display: inline-block;
   width: 48px;
   height: 48px;
   background-color: #4a4a4a;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .workflow__item-img {
   text-align: center;
@@ -277,8 +255,6 @@ body.is-fixed {
   padding: 40px;
 }
 .contact__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 160px;
   margin: 0 auto;
@@ -303,8 +279,6 @@ body.is-fixed {
   padding: 40px;
 }
 .twitter__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 160px;
   margin: 0 auto;
@@ -323,3 +297,100 @@ body.is-fixed {
   letter-spacing: 0.08em;
   color: #fff;
 }
+
+.footer {
+  padding: 10px;
+  text-align: center;
+}
+.footer__text {
+  font-size: 11px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/******************************
+PC
+******************************/
+@media screen and (min-width:768px) {
+  .wrapper {
+    display: flex;
+  }
+  .main {
+    flex-basis: 79.2%;
+  }
+  .header {
+    position: relative;
+    flex-basis: 20.8%;
+    padding: 50px 20px;
+  }
+  .header__container {
+    width: 160px;
+    margin: 0 auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+  }
+  .header__log {
+    font-size: 30px;
+    letter-spacing: 0.12em;
+    line-height: 1;
+  }
+  .header__menu-button {
+    display: none;
+  }
+  .header__contents {
+    display: block;
+    border: none;
+  }
+  .button {
+    transition: background 0.3s, color 0.3s, opacity 0.3s;
+  }
+  .button:hover {
+    background-color: #fff;
+  }
+  .button:hover .button__icon-path {
+    fill: #4a4a4a;
+  }
+  .button:hover .button__text {
+    color: #4a4a4a;
+  }
+  .button--bg:hover {
+    opacity: 0.7;
+  }
+  .section__inner {
+    max-width: 944px;
+    margin: 0 auto;
+  }
+  .section__head {
+    margin-bottom: 24px;
+  }
+  .section__head-main {
+    font-size: 60px;
+  }
+  .fv__contents {
+    background: url(../img/bg_fv.png) center center no-repeat;
+    background-size: 100% auto;
+    bottom: 100px;
+    left: 0;
+    max-width: 627px;
+    height: 174px;
+    padding-top: 24px;
+    padding-left: 96px;
+  }
+  .service__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8%;
+  }
+  .service__item + .service__item {
+    margin: 0;
+  }
+  .works__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8%;
+  }
+  .works__item + .works__item {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
