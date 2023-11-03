@@ -392,5 +392,53 @@ PC
   .works__item + .works__item {
     margin: 0;
   }
+  .about__container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4%;
+  }
+  .workflow__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .workflow__item + .workflow__item {
+    margin-top: 0;
+  }
+  .message__container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4%;
+  }
+  .page--bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact {
+    padding: 54px 40px;
+  }
+  .twitter {
+    padding: 54px 40px;
+  }
+}
+/******************************
+Tablet
+******************************/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section__head-main {
+    font-size: 54px;
+  }
+  .fv__contents {
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  .workflow__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 16px;
+  }
+  .workflow__item + .workflow__item {
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
